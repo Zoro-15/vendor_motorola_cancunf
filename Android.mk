@@ -7,7 +7,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),cancunf)
 
 $(call add-radio-file-sha1-checked,radio/dpm.img,a1972bd5b931c63bd30a5784a38fbd53f8ed4410)
-$(call add-radio-file-sha1-checked,radio/dtbo.img,71787e0eab83081c121e1ab5219289aeade72273)
 $(call add-radio-file-sha1-checked,radio/gpueb.img,0242897c635a9a9799392f0225764733d7df7dc0)
 $(call add-radio-file-sha1-checked,radio/gz.img,aaf9e4069d68b6fb3bad51e9f163b8ecbebc3140)
 $(call add-radio-file-sha1-checked,radio/lk.img,d0dfbb3b1d406b8fcfdf3defeab252bc893c114c)

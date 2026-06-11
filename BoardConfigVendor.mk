@@ -4,7 +4,6 @@
 
 AB_OTA_PARTITIONS += \
     dpm \
-    dtbo \
     gpueb \
     gz \
     lk \
