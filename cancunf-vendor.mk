@@ -1373,7 +1373,7 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libfgauge_gm30 \
     libforkexecwrap \
-    libformatter \
+    libformatter-mtk \
     libfp_ext_svc2 \
     libgf_ca \
     libgf_hal \
