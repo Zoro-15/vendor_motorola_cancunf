@@ -233,8 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Virgin_Mobile.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -1723,7 +1721,6 @@ PRODUCT_PACKAGES += \
     gnss-mtk-default.xml \
     gnss-mtk@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
-    manifest_IMoto_Fingerprint.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_apuware_apusys.xml \
     manifest_apuware_hmp.xml \
@@ -1744,8 +1741,6 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     gsm0710muxd \
     hardware_revisions \
-    android.hardware.biometrics.fingerprint@2.1-goodixservice \
-    android.hardware.biometrics.fingerprint@2.1-service-chipone \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
