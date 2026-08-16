@@ -1023,6 +1023,7 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     lib_ainr_enh \
     libaal_key \
+    libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
@@ -1201,6 +1202,7 @@ PRODUCT_PACKAGES += \
     mot_cancunf_sc202_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.utils@2.0_vendor \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -1252,7 +1254,6 @@ PRODUCT_PACKAGES += \
     libvcodecdrv \
     libvcodecdrv_v3a \
     libvpudv3a_vcodec \
-    vendor.mediatek.hardware.apmonitor@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
