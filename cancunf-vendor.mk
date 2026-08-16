@@ -181,8 +181,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/bt_stack_debug.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bt_stack_debug.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/bt_stack_level6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bt_stack_level6.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_0.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_1.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_2.xml \
@@ -1292,7 +1290,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     sensors.mediatek.V2.0 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.videotelephony-impl \
     jcos_client \
@@ -1336,12 +1333,8 @@ PRODUCT_PACKAGES += \
     libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
     libbt-vendor \
     libcam.seninfn3d \
     libcamalgo.3dnr \
@@ -1730,9 +1723,7 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     motorola.hardware.camera.imgtuner.aidl.xml \
     SN1X0__RF-On.txt \
-    autobt \
     bip_ap \
-    bt_dump \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
