@@ -1697,6 +1697,7 @@ PRODUCT_PACKAGES += \
     MobileFeliCaClient \
     ImsService \
     MtkGbaService \
+    MtkTelephonyAssist \
     moto-telephony \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
