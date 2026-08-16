@@ -27412,49 +27412,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libneuroeara",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libneuroeara.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuroeara.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libneuron_graph_delegate.mtk_vendor",
     stem: "libneuron_graph_delegate.mtk",
     owner: "motorola",
@@ -27490,41 +27447,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhidlbase",
                 "vendor.mediatek.hardware.apuware.utils@2.0_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libneuropilot_hal_utils",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libneuropilot_hal_utils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuropilot_hal_utils.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -35444,6 +35366,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libneuropilot_hal_utils",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libneuropilot_hal_utils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvcodec_utility_plat.mt6855",
     owner: "motorola",
     strip: {
@@ -39956,36 +39902,6 @@ cc_prebuilt_library_shared {
                 "libmtkproperty",
                 "libmtkrillog",
                 "libladder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libneuron_platform",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libneuron_platform.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libvpu",
                 "libc++",
                 "libc",
                 "libm",
@@ -51685,35 +51601,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "jpegtool",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/mt6855/jpegtool",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libjpeg-alpha_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "mt6855",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "v3avpud.mt6855",
     owner: "motorola",
     target: {
@@ -52175,13 +52062,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/expat",
     symlink_target: "/vendor/bin/motobox",
-}
-
-install_symlink {
-    name: "vendor_bin_jpegtool",
-    soc_specific: true,
-    installed_location: "bin/jpegtool",
-    symlink_target: "/vendor/bin/mt6855/jpegtool",
 }
 
 install_symlink {

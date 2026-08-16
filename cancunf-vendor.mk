@@ -1090,9 +1090,7 @@ PRODUCT_PACKAGES += \
     libmvpu_runtime_pub \
     libmvpuop_mtk_cv \
     libmvpuop_mtk_nn \
-    libneuroeara \
     libneuron_graph_delegate.mtk_vendor \
-    libneuropilot_hal_utils \
     libnir_neon_driver_ndk.mtk.vndk \
     libnpagent \
     libnvram \
@@ -1244,6 +1242,7 @@ PRODUCT_PACKAGES += \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libmp4enc_sa.ca7 \
+    libneuropilot_hal_utils \
     libvcodec_utility_plat.mt6855 \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
@@ -1394,7 +1393,6 @@ PRODUCT_PACKAGES += \
     libmtksysutils \
     libmtktinyxml \
     libmtkutils \
-    libneuron_platform \
     libnpagent_server \
     liboemcrypto \
     libpn557_fw \
@@ -1749,7 +1747,6 @@ PRODUCT_PACKAGES += \
     mnld \
     motobox \
     mt6660_calibration \
-    jpegtool \
     v3avpud.mt6855 \
     mtk_agpsd \
     muxreport \
@@ -1772,7 +1769,6 @@ PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
     vendor_bin_hw_camerahalserver \
     vendor_bin_expat \
-    vendor_bin_jpegtool \
     vendor_bin_v3avpud \
     vendor_lib_egl_libEGL_mtk_so \
     vendor_lib_egl_libGLESv1_CM_mtk_so \
