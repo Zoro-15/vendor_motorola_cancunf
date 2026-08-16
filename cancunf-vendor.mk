@@ -268,7 +268,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -1251,8 +1250,6 @@ PRODUCT_PACKAGES += \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libmp4enc_sa.ca7 \
-    librcs_interface \
-    librcs_volte_core \
     libvcodec_utility_plat.mt6855 \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
@@ -1264,7 +1261,6 @@ PRODUCT_PACKAGES += \
     libvcodecdrv_v3a \
     libvpudv3a_vcodec \
     vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.rcs@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
@@ -1614,7 +1610,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
@@ -1767,14 +1762,11 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     pnscr \
     pnscr_cal \
-    rcs_volte_stack \
     rt5512_calibration \
     sec_nfc_test \
     sns_mot_client \
     stp_dump3 \
     vendor.mmi.cxp \
-    volte_clientapi_ua \
-    volte_rcs_ua \
     wifi_dump \
     wifitest \
     wlan_assistant \
