@@ -1,8 +1,7 @@
 <manifest version="1.0" type="device">
-    <hal format="hidl">
+    <hal format="aidl">
         <name>vendor.mediatek.hardware.lbs</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1</version>
         <interface>
             <name>ILbs</name>
             <instance>mtk_lppe_socket_agps</instance>
@@ -25,6 +24,8 @@
             <instance>mtk_lbs_log_v2s</instance>
             <instance>mtk_debugService2agpsd</instance>
             <instance>mtk_agpsd2debugService</instance>
+            <instance>mtk_jam2mnl</instance>
+            <instance>mtk_mnl2jam</instance>
         </interface>
     </hal>
 </manifest>

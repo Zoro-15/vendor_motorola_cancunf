@@ -242,9 +242,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
+    vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
+    vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
@@ -1023,7 +1024,6 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     lib_ainr_enh \
     libaal_key \
-    libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
@@ -1200,7 +1200,6 @@ PRODUCT_PACKAGES += \
     mot_cancunf_sc202_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
-    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.utils@2.0_vendor \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -1261,7 +1260,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
-    android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mediatek \
     audio.r_submix.mediatek \
@@ -1277,11 +1275,14 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
+    mtkflp.default \
+    mtkgeofence.default \
     sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.gnss-impl \
+    vendor.mediatek.hardware.gnss.batching-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.videotelephony-impl \
     jcos_client \
-    lbs_hidl_service-impl \
     lib3a.ae.pipe \
     libBSTSWAD \
     libBSTbase_share \
@@ -1294,6 +1295,7 @@ PRODUCT_PACKAGES += \
     lib_iir \
     libadropbox \
     libalsautils-v31 \
+    libapmonitor_vendor \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range_v2 \
     libarcsoft_portrait_distortion_correction \
@@ -1400,7 +1402,6 @@ PRODUCT_PACKAGES += \
     libportrait_repair_ppl3_ocl \
     libratconfig \
     librilfusion \
-    librpc \
     librsumodem \
     librt_extamp_intf \
     libsn100u_fw \
@@ -1414,7 +1415,6 @@ PRODUCT_PACKAGES += \
     libundistort_impl \
     liburee_meta_drmkeyinstall \
     libvia-ril \
-    libviagpsrpc \
     libviamipc-ril \
     libvpu \
     libwifitest \
@@ -1582,6 +1582,7 @@ PRODUCT_PACKAGES += \
     libpda_usdriver \
     libstereoinfoaccessor_vsdof \
     libvainr_model \
+    mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     nfc_nci_sec \
     se_extn_client \
@@ -1589,6 +1590,8 @@ PRODUCT_PACKAGES += \
     libmsstwrapper \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
     vendor.goodix.hardware.biometrics.fingerprint@3.0 \
+    vendor.mediatek.hardware.apmonitor-V1-ndk \
+    vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0_vendor \
     vendor.mediatek.hardware.apuware.apusys@2.1_vendor \
     vendor.mediatek.hardware.apuware.hmp@1.0_vendor \
@@ -1602,8 +1605,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.gnss-V1-ndk \
+    vendor.mediatek.hardware.gnss.batching-V1-ndk \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
+    vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
@@ -1699,8 +1705,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
     gnss-mtk-default.xml \
-    gnss-mtk@2.1-service.xml \
-    lbs_hidl_service@1.0.xml \
+    gnss-mtk.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_apuware_apusys.xml \
     manifest_apuware_hmp.xml \
@@ -1709,6 +1714,8 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     motorola.hardware.camera.imgtuner.aidl.xml \
+    mtk_lbs_service.xml \
+    mtkgnss-batching.xml \
     SN1X0__RF-On.txt \
     bip_ap \
     ccci_fsd \
@@ -1731,6 +1738,7 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
+    vendor.mediatek.hardware.gnss-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \
@@ -1742,13 +1750,13 @@ PRODUCT_PACKAGES += \
     init.mmi.block_perm \
     init.mmi.boot \
     init.mmi.touch \
-    lbs_hidl_service \
     mcDriverDaemon \
     mnld \
     motobox \
     mt6660_calibration \
     v3avpud.mt6855 \
     mtk_agpsd \
+    mtk_lbs_service \
     muxreport \
     nvram_daemon \
     pnscr \
