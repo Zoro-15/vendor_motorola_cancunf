@@ -261,7 +261,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_100.conf \
@@ -1768,7 +1767,6 @@ PRODUCT_PACKAGES += \
     vendor.mmi.cxp \
     wifi_dump \
     wifitest \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader \
     vtservice
