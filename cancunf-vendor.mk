@@ -1060,7 +1060,6 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libladder \
     liblog_vendor \
     libminiui \
     libmml \
