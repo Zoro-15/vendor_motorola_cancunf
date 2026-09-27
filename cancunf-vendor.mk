@@ -1253,6 +1253,7 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.hardware.audio@7.0-util-v32 \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
     android.hardware.audio@6.0-impl-mediatek \
