@@ -6,7 +6,6 @@ soong_namespace {
     imports: [
         "device/motorola/cancunf",
         "hardware/mediatek",
-        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
     ],
 }
