@@ -1053,8 +1053,6 @@ PRODUCT_PACKAGES += \
     libgz_uree \
     libhevce_sb.ca7.android \
     libimgsensorca \
-    libion_mtk \
-    libion_ulit \
     libipsec_ims_shr \
     libiqi_bridge \
     libispcameraca \
